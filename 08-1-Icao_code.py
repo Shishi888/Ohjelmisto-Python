@@ -10,7 +10,7 @@ yhteys = mysql.connector.connect(
     autocommit=True
 )
 
-def hae_lentokenttä(icao_koodi):
+def lentokenttä(icao_koodi):
     try:
 
         kursori = yhteys.cursor()
@@ -36,4 +36,4 @@ def hae_lentokenttä(icao_koodi):
 icao_koodi = input("Syötä ICAO-koodi: ")
 
 
-hae_lentokenttä(icao_koodi)
+lentokenttä(icao_koodi)
